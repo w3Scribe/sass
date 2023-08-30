@@ -1,0 +1,5 @@
+@mixin theme($clr){
+    @media (prefers-color-scheme:$clr) {
+        @content
+    }
+}

@@ -1,0 +1,21 @@
+$default_font_size: 16 ; //10px
+
+@function rem($size){
+    @if( $size == 0){
+        @return 0
+    }@else{
+        @return calc($size/$default_font_size)+rem
+    }
+}
+
+@function em($size){
+    @if( $size == 0){
+        @return 0
+    }@else{
+        @return calc($size/$default_font_size)+em
+    }
+}
+
+
+
+   

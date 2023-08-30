@@ -1,0 +1,34 @@
+$display-values: block, inline, inline-block, table, table-row, table-cell, none, flex, grid, contents, inline-table, list-item, run-in, table-caption, table-column-group, table-header-group, table-footer-group, table-row-group, initial, inherit;
+
+@each $i in $display-values{
+    %#{$i}{
+        display: $i;
+    }
+}
+
+$flex-direction-values: row, row-reverse, column, column-reverse, initial, inherit;
+
+@each $i in $flex-direction-values{
+
+    %#{$i}{
+        flex-direction: $i;
+    }
+}
+
+
+$justify-content-values: flex-start, flex-end, center, space-between, space-around, space-evenly, initial, inherit;
+
+
+@each $i in $justify-content-values{
+    %#{$i}{
+        justify-content: $i;
+    }
+}
+
+$align-items-values: flex-start, flex-end, center, stretch, baseline, initial, inherit;
+
+@each $i in $align-items-values{
+    %#{$i}{
+        align-items: $i;
+    }
+}

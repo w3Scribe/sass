@@ -1,0 +1,6 @@
+@use './extends';
+
+%flex-center-center{
+    @extend %flex,
+    %row, %center
+}

@@ -1,0 +1,27 @@
+@use 'mixins' ;
+@use 'functions';
+
+//hue of the color
+@media (prefers-color-scheme:normal){
+    :root{
+        --accent-clr:#8c2eff;
+        --bgColor: #0b0b0f;
+    }   
+}
+// var for light variable
+@media (prefers-color-scheme:light){
+   
+}
+   
+
+// var for dark variable
+@media (prefers-color-scheme: dark){
+    :root{
+        --accent-clr:#8c2eff;
+        --bgColor: #0b0b0f;
+    }   
+}
+
+
+
+       
